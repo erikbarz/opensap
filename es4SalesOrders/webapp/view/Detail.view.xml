@@ -1,0 +1,104 @@
+<mvc:View controllerName="es4salesorders.controller.Detail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic"
+	xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:footerbar="sap.ushell.ui.footerbar">
+	<semantic:DetailPage id="page" navButtonPress="onNavBack" showNavButton="{device>/system/phone}" title="{i18n>detailTitle}"
+		busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}">
+		<semantic:content>
+			<ObjectHeader id="objectHeader" title="{CustomerName}" number="{ path: 'GrossAmount', formatter: '.formatter.currencyValue' }"
+				numberUnit="{CurrencyCode}" responsive="true" intro="{Note}"></ObjectHeader>
+			<IconTabBar id="iconTabBar" class="sapUiResponsiveContentPadding">
+				<items>
+					<IconTabFilter id="iconTabBarFilter2" icon="sap-icon://product" tooltip="{i18n>detailIconTabBarLineItems}" text="Line Items">
+						<Table id="lineItemsList" width="auto" items="{ path: 'ToLineItems', parameters: { expand: 'ToProduct' } }"
+							updateFinished="onListUpdateFinished" noDataText="{i18n>detailLineItemTableNoDataText}"
+							busyIndicatorDelay="{detailView>/lineItemTableDelay}" class="sapUiResponsiveMargin">
+							<headerToolbar>
+								<Toolbar id="lineItemsToolbar">
+									<Title id="lineItemsHeader" text="{detailView>/lineItemListTitle}"/>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column>
+									<Text text="{i18n>detailLineItemTableIDColumn}"/>
+								</Column>
+								<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
+									<Text text="{i18n>detailLineItemTableDateColumn}"/>
+								</Column>
+								<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
+									<Text text="{i18n>detailLineItemTableUnitNumberColumn}"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Link text="{ToProduct/Name} ({ProductID})" subtle="true" press="handleLinkPress" target="{ProductID}"/>
+										<Text text="{ path: 'DeliveryDate', type : 'sap.ui.model.type.Date', formatOptions: { style : 'full' } }"/>
+										<ObjectNumber number="{ path: 'GrossAmount', formatter: '.formatter.currencyValue' }" unit="{CurrencyCode}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</IconTabFilter>
+					<IconTabFilter id="iconTabBarFilter1" icon="sap-icon://hint" tooltip="{i18n>detailIconTabBarInfo}" text="Info">
+						<form:SimpleForm width="auto" class="sapUiResponsiveMargin" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4"
+							emptySpanM="4" columnsL="1" columnsM="1" title="Sales Order Status">
+							<form:content>
+								<Label text="Lifecycle Status"/>
+								<Text text="{LifecycleStatusDescription}"/>
+								<Label text="Billing Status"/>
+								<Text text="{BillingStatusDescription}"/>
+								<Label text="Delivery Status"/>
+								<Text text="{DeliveryStatusDescription}"/>
+							</form:content>
+						</form:SimpleForm>
+						<form:SimpleForm width="auto" class="sapUiResponsiveMargin" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4"
+							emptySpanM="4" columnsL="1" columnsM="1" title="Billing Details">
+							<form:content>
+								<Label text="Gross Amount"/>
+								<Text text="{GrossAmount} {CurrencyCode}"/>
+								<Label text="Net Amount"/>
+								<Text text="{NetAmount} {CurrencyCode}"/>
+								<Label text="Tax Amount"/>
+								<Text text="{TaxAmount} {CurrencyCode}"/>
+							</form:content>
+						</form:SimpleForm>
+					</IconTabFilter>
+					<IconTabFilter id="iconTabBarFilter3" icon="sap-icon://business-card" tooltip="{i18n>detailIconTabBarAttachments}" text="Busniess Partner">
+						<form:SimpleForm width="auto" class="sapUiResponsiveMargin" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4"
+							emptySpanM="4" columnsL="1" columnsM="1" title="Sales Order Status">
+							<form:content>
+								<core:Title text="Partner Info"/>
+								<Label text="Partner ID"/>
+								<Text text="{ToBusinessPartner/BusinessPartnerID}"/>
+								<Label text="Company Name"/>
+								<Text text="{ToBusinessPartner/CompanyName}"/>
+								<Label text="Web Address"/>
+								<Text text="{ToBusinessPartner/WebAddress}"/>
+								<Label text="Business Partner Role"/>
+								<Text text="{ToBusinessPartner/BusinessPartnerRole}"/>
+								<core:Title text="Contact Info"/>
+								<Label text="Address"/>
+								<Text
+									text="{ parts:[ {path: 'ToBusinessPartner/Address/Building'}, {path: 'ToBusinessPartner/Address/Street'}, {path: 'ToBusinessPartner/Address/City'}, {path: 'ToBusinessPartner/Address/PostalCode'}, {path: 'ToBusinessPartner/Address/Country'} ], formatter: '.formatter.formatAddress' }"/>
+								<Label text="Email Address"/>
+								<Text text="{ToBusinessPartner/EmailAddress}"/>
+								<Label text="Phone Number"/>
+								<Text text="{ToBusinessPartner/PhoneNumber}"/>
+								<Label text="Fax Number"/>
+								<Text text="{ToBusinessPartner/FaxNumber}"/>
+							</form:content>
+						</form:SimpleForm>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</semantic:content>
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press="onShareEmailPress"/>
+		</semantic:sendEmailAction>
+		<semantic:shareInJamAction>
+			<semantic:ShareInJamAction id="shareInJam" visible="{FLP>/isShareInJamActive}" press="onShareInJamPress"/>
+		</semantic:shareInJamAction>
+		<semantic:saveAsTileAction>
+			<footerbar:AddBookmarkButton id="shareTile" title="{detailView>/saveAsTileTitle}"/>
+		</semantic:saveAsTileAction>
+	</semantic:DetailPage>
+</mvc:View>

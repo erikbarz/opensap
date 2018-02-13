@@ -1,0 +1,46 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.suite.ui.commons" controllerName="es4salesorders.controller.Tile"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<html:style>
+		.sapUiMedia-Std-Desktop .sapSuiteUiCommonsNwCCTxt.Auto>.sapMText, .sapUiMedia-Std-Tablet .sapSuiteUiCommonsNwCCTxt.Auto>.sapMText,
+		.sapSuiteUiCommonsNwCCTxt.L>.sapMText, .sapSuiteUiCommonsNwCCTxt.M>.sapMText { 
+			font-size: 1.875rem; 
+			color: white; 
+		} 
+		
+		.sapUiMedia-Std-Desktop.sapSuiteUiCommonsNwCSbh.Auto, .sapUiMedia-Std-Tablet .sapSuiteUiCommonsNwCSbh.Auto, .sapSuiteUiCommonsNwCSbh.L, .sapSuiteUiCommonsNwCSbh.M
+		{ 
+			font-size: 0.975rem; 
+			font-style: italic; 
+			color: #E3AE57 !important; 
+		} 
+		
+		.tile{ 
+			background-color: #232B2B; 
+		} 
+		
+		.sapUiMedia-Std-Desktop	.sapSuiteGTContent.Auto, .sapSuiteGTContent.L, .sapUiMedia-Std-Tablet .sapSuiteGTContent.Auto, .sapSuiteGTContent.M { 
+			height: initial	!important; 
+		} 
+		
+		.M .sapSuiteGTHdrTxt{ 
+			padding-top: 5px; 
+		} 
+		
+		.sapUiMedia-Std-Desktop .sapSuiteGTHdrTxt.Auto>.sapMText,
+		.sapSuiteGTHdrTxt.L>.sapMText, .sapUiMedia-Std-Tablet .sapSuiteGTHdrTxt.Auto>.sapMText, .sapSuiteGTHdrTxt.M>.sapMText{ 
+			color: white; 
+		}
+		.sapSuiteTileCnt.News { 
+			background-color: inherit; 
+		}
+	</html:style>
+	<GenericTile id="genericTile" class="tile" frameType="TwoByOne" press="onPress" subheader="">
+		<tileContent>
+			<TileContent footer="Birthday: {path:'BirthDate', formatter:'.formatter.formatDate'}" size="M">
+				<content>
+					<NewsContent size="L" contentText="{TitleOfCourtesy} {FirstName} {LastName}" subheader="{Title}"></NewsContent>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+</core:View>

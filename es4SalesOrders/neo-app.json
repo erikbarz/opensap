@@ -1,0 +1,73 @@
+{
+	"authenticationMethod": "none",
+  "routes": [
+    {
+      "path": "/webapp/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/webapp/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/sap/opu/odata",
+      "target": {
+        "type": "destination",
+        "name": "ES4",
+        "entryPath": "/sap/opu/odata"
+      },
+      "description": "ES4"
+    },
+    {
+      "path": "/sap/opu/odata/sap/ZTG_TEST_SRV",
+      "target": {
+        "type": "destination",
+        "name": "ES4",
+        "entryPath": "/sap/opu/odata/sap/ZTG_TEST_SRV"
+      },
+      "description": "ES4"
+    },
+    {
+      "path": "/destinations/northwind",
+      "target": {
+        "type": "destination",
+        "name": "northwind"
+      },
+      "description": "northwind"
+    }
+  ],
+  "cacheControl": [
+        {
+            "directive": "public",
+            "maxAge": 0
+        }
+    ]
+}
