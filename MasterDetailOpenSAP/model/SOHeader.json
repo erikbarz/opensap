@@ -1,0 +1,191 @@
+[{
+	"OrderId": "OrderId 1",
+	"DocumentType": "DocumentType 1",
+	"DocumentDate": "/Date(1292362153000)/",
+	"CustomerId": "CustomerId 1",
+	"SalesOrg": "SalesOrg 1",
+	"DistChannel": "DistChannel 1",
+	"Division": "Division 1",
+	"OrderValue": 5745.51,
+	"Currency": "Currency 1",
+	"__metadata": {
+		"uri": "SOHeaders('OrderId 1')",
+		"type": "SALESORDERXX.SOHeader"
+	},
+	"SOItems": {
+		"__deferred": {
+			"uri": "SOHeaders('OrderId 1')/SOItems"
+		}
+	}
+}, {
+	"OrderId": "OrderId 2",
+	"DocumentType": "DocumentType 2",
+	"DocumentDate": "/Date(1560284953000)/",
+	"CustomerId": "CustomerId 2",
+	"SalesOrg": "SalesOrg 2",
+	"DistChannel": "DistChannel 2",
+	"Division": "Division 2",
+	"OrderValue": 9577.71,
+	"Currency": "Currency 2",
+	"__metadata": {
+		"uri": "SOHeaders('OrderId 2')",
+		"type": "SALESORDERXX.SOHeader"
+	},
+	"SOItems": {
+		"__deferred": {
+			"uri": "SOHeaders('OrderId 2')/SOItems"
+		}
+	}
+}, {
+	"OrderId": "OrderId 3",
+	"DocumentType": "DocumentType 3",
+	"DocumentDate": "/Date(1458336553000)/",
+	"CustomerId": "CustomerId 3",
+	"SalesOrg": "SalesOrg 3",
+	"DistChannel": "DistChannel 3",
+	"Division": "Division 3",
+	"OrderValue": 1982.54,
+	"Currency": "Currency 3",
+	"__metadata": {
+		"uri": "SOHeaders('OrderId 3')",
+		"type": "SALESORDERXX.SOHeader"
+	},
+	"SOItems": {
+		"__deferred": {
+			"uri": "SOHeaders('OrderId 3')/SOItems"
+		}
+	}
+}, {
+	"OrderId": "OrderId 4",
+	"DocumentType": "DocumentType 4",
+	"DocumentDate": "/Date(1497385753000)/",
+	"CustomerId": "CustomerId 4",
+	"SalesOrg": "SalesOrg 4",
+	"DistChannel": "DistChannel 4",
+	"Division": "Division 4",
+	"OrderValue": 6274.68,
+	"Currency": "Currency 4",
+	"__metadata": {
+		"uri": "SOHeaders('OrderId 4')",
+		"type": "SALESORDERXX.SOHeader"
+	},
+	"SOItems": {
+		"__deferred": {
+			"uri": "SOHeaders('OrderId 4')/SOItems"
+		}
+	}
+}, {
+	"OrderId": "OrderId 5",
+	"DocumentType": "DocumentType 5",
+	"DocumentDate": "/Date(1032640153000)/",
+	"CustomerId": "CustomerId 5",
+	"SalesOrg": "SalesOrg 5",
+	"DistChannel": "DistChannel 5",
+	"Division": "Division 5",
+	"OrderValue": 7636.7,
+	"Currency": "Currency 5",
+	"__metadata": {
+		"uri": "SOHeaders('OrderId 5')",
+		"type": "SALESORDERXX.SOHeader"
+	},
+	"SOItems": {
+		"__deferred": {
+			"uri": "SOHeaders('OrderId 5')/SOItems"
+		}
+	}
+}, {
+	"OrderId": "OrderId 6",
+	"DocumentType": "DocumentType 6",
+	"DocumentDate": "/Date(1179001753000)/",
+	"CustomerId": "CustomerId 6",
+	"SalesOrg": "SalesOrg 6",
+	"DistChannel": "DistChannel 6",
+	"Division": "Division 6",
+	"OrderValue": 4421.05,
+	"Currency": "Currency 6",
+	"__metadata": {
+		"uri": "SOHeaders('OrderId 6')",
+		"type": "SALESORDERXX.SOHeader"
+	},
+	"SOItems": {
+		"__deferred": {
+			"uri": "SOHeaders('OrderId 6')/SOItems"
+		}
+	}
+}, {
+	"OrderId": "OrderId 7",
+	"DocumentType": "DocumentType 7",
+	"DocumentDate": "/Date(1469651353000)/",
+	"CustomerId": "CustomerId 7",
+	"SalesOrg": "SalesOrg 7",
+	"DistChannel": "DistChannel 7",
+	"Division": "Division 7",
+	"OrderValue": 4781.64,
+	"Currency": "Currency 7",
+	"__metadata": {
+		"uri": "SOHeaders('OrderId 7')",
+		"type": "SALESORDERXX.SOHeader"
+	},
+	"SOItems": {
+		"__deferred": {
+			"uri": "SOHeaders('OrderId 7')/SOItems"
+		}
+	}
+}, {
+	"OrderId": "OrderId 8",
+	"DocumentType": "DocumentType 8",
+	"DocumentDate": "/Date(1140125353000)/",
+	"CustomerId": "CustomerId 8",
+	"SalesOrg": "SalesOrg 8",
+	"DistChannel": "DistChannel 8",
+	"Division": "Division 8",
+	"OrderValue": 212.36,
+	"Currency": "Currency 8",
+	"__metadata": {
+		"uri": "SOHeaders('OrderId 8')",
+		"type": "SALESORDERXX.SOHeader"
+	},
+	"SOItems": {
+		"__deferred": {
+			"uri": "SOHeaders('OrderId 8')/SOItems"
+		}
+	}
+}, {
+	"OrderId": "OrderId 9",
+	"DocumentType": "DocumentType 9",
+	"DocumentDate": "/Date(1315772953000)/",
+	"CustomerId": "CustomerId 9",
+	"SalesOrg": "SalesOrg 9",
+	"DistChannel": "DistChannel 9",
+	"Division": "Division 9",
+	"OrderValue": 6720.45,
+	"Currency": "Currency 9",
+	"__metadata": {
+		"uri": "SOHeaders('OrderId 9')",
+		"type": "SALESORDERXX.SOHeader"
+	},
+	"SOItems": {
+		"__deferred": {
+			"uri": "SOHeaders('OrderId 9')/SOItems"
+		}
+	}
+}, {
+	"OrderId": "OrderId 10",
+	"DocumentType": "DocumentType 10",
+	"DocumentDate": "/Date(993328153000)/",
+	"CustomerId": "CustomerId 10",
+	"SalesOrg": "SalesOrg 10",
+	"DistChannel": "DistChannel 10",
+	"Division": "Division 10",
+	"OrderValue": 3825.39,
+	"Currency": "Currency 10",
+	"__metadata": {
+		"uri": "SOHeaders('OrderId 10')",
+		"type": "SALESORDERXX.SOHeader"
+	},
+	"SOItems": {
+		"__deferred": {
+			"uri": "SOHeaders('OrderId 10')/SOItems"
+		}
+	}
+}]

@@ -1,0 +1,181 @@
+[{
+	"OrderId": "OrderId 1",
+	"Item": "Item 1",
+	"Material": "Material 1",
+	"Description": "Description 1",
+	"Plant": "Plant 1",
+	"Quantity": 4862.33,
+	"UoM": "UoM 1",
+	"Value": 3228.77,
+	"__metadata": {
+		"uri": "SOItems(OrderId='OrderId 1',Item='Item 1')",
+		"type": "SALESORDERXX.SOItem"
+	},
+	"SOHeader": {
+		"__deferred": {
+			"uri": "SOItems(OrderId='OrderId 1',Item='Item 1')/SOHeader"
+		}
+	}
+}, {
+	"OrderId": "OrderId 2",
+	"Item": "Item 2",
+	"Material": "Material 2",
+	"Description": "Description 2",
+	"Plant": "Plant 2",
+	"Quantity": 4296.38,
+	"UoM": "UoM 2",
+	"Value": 3945.03,
+	"__metadata": {
+		"uri": "SOItems(OrderId='OrderId 2',Item='Item 2')",
+		"type": "SALESORDERXX.SOItem"
+	},
+	"SOHeader": {
+		"__deferred": {
+			"uri": "SOItems(OrderId='OrderId 2',Item='Item 2')/SOHeader"
+		}
+	}
+}, {
+	"OrderId": "OrderId 3",
+	"Item": "Item 3",
+	"Material": "Material 3",
+	"Description": "Description 3",
+	"Plant": "Plant 3",
+	"Quantity": 8949.46,
+	"UoM": "UoM 3",
+	"Value": 651.34,
+	"__metadata": {
+		"uri": "SOItems(OrderId='OrderId 3',Item='Item 3')",
+		"type": "SALESORDERXX.SOItem"
+	},
+	"SOHeader": {
+		"__deferred": {
+			"uri": "SOItems(OrderId='OrderId 3',Item='Item 3')/SOHeader"
+		}
+	}
+}, {
+	"OrderId": "OrderId 4",
+	"Item": "Item 4",
+	"Material": "Material 4",
+	"Description": "Description 4",
+	"Plant": "Plant 4",
+	"Quantity": 9294.76,
+	"UoM": "UoM 4",
+	"Value": 5721.87,
+	"__metadata": {
+		"uri": "SOItems(OrderId='OrderId 4',Item='Item 4')",
+		"type": "SALESORDERXX.SOItem"
+	},
+	"SOHeader": {
+		"__deferred": {
+			"uri": "SOItems(OrderId='OrderId 4',Item='Item 4')/SOHeader"
+		}
+	}
+}, {
+	"OrderId": "OrderId 5",
+	"Item": "Item 5",
+	"Material": "Material 5",
+	"Description": "Description 5",
+	"Plant": "Plant 5",
+	"Quantity": 9518.79,
+	"UoM": "UoM 5",
+	"Value": 4288.81,
+	"__metadata": {
+		"uri": "SOItems(OrderId='OrderId 5',Item='Item 5')",
+		"type": "SALESORDERXX.SOItem"
+	},
+	"SOHeader": {
+		"__deferred": {
+			"uri": "SOItems(OrderId='OrderId 5',Item='Item 5')/SOHeader"
+		}
+	}
+}, {
+	"OrderId": "OrderId 6",
+	"Item": "Item 6",
+	"Material": "Material 6",
+	"Description": "Description 6",
+	"Plant": "Plant 6",
+	"Quantity": 1009.96,
+	"UoM": "UoM 6",
+	"Value": 4817.59,
+	"__metadata": {
+		"uri": "SOItems(OrderId='OrderId 6',Item='Item 6')",
+		"type": "SALESORDERXX.SOItem"
+	},
+	"SOHeader": {
+		"__deferred": {
+			"uri": "SOItems(OrderId='OrderId 6',Item='Item 6')/SOHeader"
+		}
+	}
+}, {
+	"OrderId": "OrderId 7",
+	"Item": "Item 7",
+	"Material": "Material 7",
+	"Description": "Description 7",
+	"Plant": "Plant 7",
+	"Quantity": 8961.67,
+	"UoM": "UoM 7",
+	"Value": 3539.1,
+	"__metadata": {
+		"uri": "SOItems(OrderId='OrderId 7',Item='Item 7')",
+		"type": "SALESORDERXX.SOItem"
+	},
+	"SOHeader": {
+		"__deferred": {
+			"uri": "SOItems(OrderId='OrderId 7',Item='Item 7')/SOHeader"
+		}
+	}
+}, {
+	"OrderId": "OrderId 8",
+	"Item": "Item 8",
+	"Material": "Material 8",
+	"Description": "Description 8",
+	"Plant": "Plant 8",
+	"Quantity": 8582.91,
+	"UoM": "UoM 8",
+	"Value": 1224.26,
+	"__metadata": {
+		"uri": "SOItems(OrderId='OrderId 8',Item='Item 8')",
+		"type": "SALESORDERXX.SOItem"
+	},
+	"SOHeader": {
+		"__deferred": {
+			"uri": "SOItems(OrderId='OrderId 8',Item='Item 8')/SOHeader"
+		}
+	}
+}, {
+	"OrderId": "OrderId 9",
+	"Item": "Item 9",
+	"Material": "Material 9",
+	"Description": "Description 9",
+	"Plant": "Plant 9",
+	"Quantity": 9648.94,
+	"UoM": "UoM 9",
+	"Value": 9648.66,
+	"__metadata": {
+		"uri": "SOItems(OrderId='OrderId 9',Item='Item 9')",
+		"type": "SALESORDERXX.SOItem"
+	},
+	"SOHeader": {
+		"__deferred": {
+			"uri": "SOItems(OrderId='OrderId 9',Item='Item 9')/SOHeader"
+		}
+	}
+}, {
+	"OrderId": "OrderId 10",
+	"Item": "Item 10",
+	"Material": "Material 10",
+	"Description": "Description 10",
+	"Plant": "Plant 10",
+	"Quantity": 6268.23,
+	"UoM": "UoM 10",
+	"Value": 7932.88,
+	"__metadata": {
+		"uri": "SOItems(OrderId='OrderId 10',Item='Item 10')",
+		"type": "SALESORDERXX.SOItem"
+	},
+	"SOHeader": {
+		"__deferred": {
+			"uri": "SOItems(OrderId='OrderId 10',Item='Item 10')/SOHeader"
+		}
+	}
+}]

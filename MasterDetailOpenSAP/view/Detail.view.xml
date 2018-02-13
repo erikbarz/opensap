@@ -1,0 +1,90 @@
+<sap.ui.core.mvc:View controllerName="myfioriapp_ns.view.Detail"
+    xmlns="sap.m"
+    xmlns:sap.ui.core="sap.ui.core"
+    xmlns:sap.ui.layout.form="sap.ui.layout.form"
+    xmlns:sap.ui.core.mvc="sap.ui.core.mvc" >
+    <Page id="detailPage" title="{i18n>detailTitle}" showNavButton="{device>/isPhone}">
+        <content>
+            <ObjectHeader id="detailHeader" title="{CustomerId}" number="{OrderValue}" numberUnit="{Currency}" introActive="false" titleActive="false" iconActive="false">
+                <customData>
+                    <sap.ui.core:CustomData id="coreCustomData3" key="sapDtResourcePath" value="SOHeaders"></sap.ui.core:CustomData>
+                </customData>
+                <attributes>
+                    <ObjectAttribute id="attribute" text="{i18n>detailText}" active="false"></ObjectAttribute>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus id="status">
+                        <customData>
+                            <sap.ui.core:CustomData id="coreCustomData4" key="sapDtResourcePath" value="SOHeaders"></sap.ui.core:CustomData>
+                        </customData>
+                    </ObjectStatus>
+                </firstStatus>
+            </ObjectHeader>
+            <IconTabBar id="idIconTabBar" expanded="{device>/isNoPhone}" selectedKey="__filter0">
+                <customData>
+                    <sap.ui.core:CustomData id="coreCustomData5" key="sapDtResourcePath" value="SOHeaders"></sap.ui.core:CustomData>
+                </customData>
+                <items>
+                    <IconTabFilter id="iconTabFilter1" class="widget-droparea-sortable-child" text="Nurses" key="selfInfo" icon="sap-icon://nurse" iconColor="Negative">
+                        <content>
+                            <sap.ui.layout.form:SimpleForm id="iconTabFilter1form" minWidth="1024" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1">
+                                <sap.ui.layout.form:content>
+                                    <Label id="label1"></Label>
+                                    <Text id="text1" maxLines="0">
+                                        <customData>
+                                            <sap.ui.core:CustomData id="coreCustomData6" key="sapDtResourcePath" value="SOHeaders"></sap.ui.core:CustomData>
+                                        </customData>
+                                    </Text>
+                                    <Label id="label2"></Label>
+                                    <Text id="text2" maxLines="0">
+                                        <customData>
+                                            <sap.ui.core:CustomData id="coreCustomData7" key="sapDtResourcePath" value="SOHeaders"></sap.ui.core:CustomData>
+                                        </customData>
+                                    </Text>
+                                    <Label id="label3"></Label>
+                                    <Text id="text3" maxLines="0">
+                                        <customData>
+                                            <sap.ui.core:CustomData id="coreCustomData8" key="sapDtResourcePath" value="SOHeaders"></sap.ui.core:CustomData>
+                                        </customData>
+                                    </Text>
+                                </sap.ui.layout.form:content>
+                            </sap.ui.layout.form:SimpleForm>
+                        </content>
+                    </IconTabFilter>
+                    <IconTabFilter text="Sales Org" icon="sap-icon://dishwasher" iconColor="Positive"></IconTabFilter>
+                </items>
+                <content>
+                    <sap.ui.layout.form:SimpleForm editable="false" layout="ResponsiveGridLayout">
+                        <sap.ui.layout.form:content>
+                            <sap.ui.core:Title text="Sales Org Details"></sap.ui.core:Title>
+                            <Label text="Sales Org"></Label>
+                            <Input value="{SalesOrg}" width="100%">
+                                <customData>
+                                    <sap.ui.core:CustomData key="sapDtResourcePath" value="SOHeaders"></sap.ui.core:CustomData>
+                                </customData>
+                            </Input>
+                            <Label text="Division"></Label>
+                            <Input value="{Division}" width="100%">
+                                <customData>
+                                    <sap.ui.core:CustomData key="sapDtResourcePath" value="SOHeaders"></sap.ui.core:CustomData>
+                                </customData>
+                            </Input>
+                        </sap.ui.layout.form:content>
+                    </sap.ui.layout.form:SimpleForm>
+                </content>
+            </IconTabBar>
+        </content>
+        <footer>
+            <Toolbar id="detailToolbar">
+                <customData>
+                    <sap.ui.core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"></sap.ui.core:CustomData>
+                    <sap.ui.core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"></sap.ui.core:CustomData>
+                </customData>
+                <content>
+                    <ToolbarSpacer id="toolbarSpacer"></ToolbarSpacer>
+                    <Button id="actionButton" icon="sap-icon://action"></Button>
+                </content>
+            </Toolbar>
+        </footer>
+    </Page>
+</sap.ui.core.mvc:View>

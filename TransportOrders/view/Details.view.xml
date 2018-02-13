@@ -1,0 +1,119 @@
+<core:View xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:ui="sap.ca.ui"
+	 xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout" controllerName="TransportOrders.view.Details">
+	<Page id="DetailsPage" title="{i18n>detailTitle}" showNavButton="true" navButtonPress="onNavBack">
+		<content>
+			<ObjectHeader id="details_object_header" 
+				title="{OrderId}" 
+				number="{OrderValue}" 
+				numberUnit="{Currency}" >			
+                <customData 
+                    id="customData6">
+                    <core:CustomData 
+                        id="coreCustomData6" 
+                        key="sapDtResourcePath" 
+                        value="FlightCollection">
+                    </core:CustomData>
+                </customData>
+				<statuses id="details_statuses">
+					<ObjectStatus id="details_statuses_status1"
+				    text=""
+					state="None" >
+						<customData 
+							id="customData7">
+							<core:CustomData 
+								id="coreCustomData7" 
+								key="sapDtResourcePath" 
+								value="FlightCollection">
+							</core:CustomData>
+						</customData>					
+					</ObjectStatus>			
+				</statuses>
+				
+				<attributes id="details_attributes"> 
+						<ObjectAttribute id="details_attributes_att1"
+						title="Division"						text="{Division}" >
+                            <customData 
+                                id="customData8">
+                                <core:CustomData 
+                                    id="coreCustomData8" 
+                                    key="sapDtResourcePath" 
+                                    value="FlightCollection">
+                                </core:CustomData>
+                            </customData>						
+						</ObjectAttribute> 
+					<ObjectAttribute id="details_attributes_att2" 
+					    title="Division"
+						text="{Division}" >
+                            <customData 
+                                id="customData9">
+                                <core:CustomData 
+                                    id="coreCustomData9" 
+                                    key="sapDtResourcePath" 
+                                    value="FlightCollection">
+                                </core:CustomData>
+                            </customData>    						
+    					</ObjectAttribute> 
+					<ObjectAttribute id="details_attributes_att3"
+					    title="Sales Document"
+						text="{OrderId}" >
+                            <customData 
+                                id="customData10">
+                                <core:CustomData 
+                                    id="coreCustomData10" 
+                                    key="sapDtResourcePath" 
+                                    value="FlightCollection">
+                                </core:CustomData>
+                            </customData>    						
+    					</ObjectAttribute>			
+				</attributes>
+			</ObjectHeader>
+			
+			<!--Extension Point 1-->
+			<core:ExtensionPoint name="extensionAfterObjectHeader" />
+
+			<!--Navigation Table -->
+			<Table id="navigationTable" class="navTableControlLayout"
+				growing="true" growingScrollToLoad="true">
+				<headerToolbar id="navigationTable_headerToolbar">
+					<Toolbar id="navigationTable_headerToolbar_toolbar"> 
+					    <Label id="navigationTable_headerToolbar_toolbar_title" text="SOItems" class="sapMH4FontSize" />					
+					</Toolbar>
+				</headerToolbar>
+				<columns id="navigationTable_columns">
+					<Column id="navigationTable_columns_col1" width="33%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top">
+						<header id="navigationTable_columns_col1_header"> 
+						<Label id="navigationTable_columns_col1_header_label" text="Sales Document" />						
+						</header>
+					</Column>
+					
+					<Column id="navigationTable_columns_col2"  width="33%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top">
+						<header id="navigationTable_columns_col2_header"> 
+						<Label id="navigationTable_columns_col2_header_label" text="Material" />						
+						</header>
+					</Column>
+					
+					<Column id="navigationTable_columns_col3" width="33%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top">
+						<header id="navigationTable_columns_col3_header"> 
+						<Label id="navigationTable_columns_col3_header_label" text="Plant" />						
+						</header>
+					</Column>
+				</columns>
+				<ColumnListItem id="navigationListItem">
+					<cells id="navigationListItem_cells"> 
+						<Text id="navigationListItem_cells_cell_1" text="{OrderId}" /> 
+						<Text id="navigationListItem_cells_cell_2" text="{Material}" /> 
+						<Text id="navigationListItem_cells_cell_3" text="{Plant}" />						
+					</cells>
+				</ColumnListItem>
+			</Table>
+			<!--Extension Point 2-->
+			<core:ExtensionPoint name="extensionAfterNavigationTable" />
+		</content>
+		<footer>
+		</footer>		
+	</Page>
+</core:View>

@@ -1,0 +1,28 @@
+{
+  "run": [
+    {
+      "filePath": "/MyFirstFioriApp_w4/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 7330337,
+        "displayName": "New Web Application 2"
+      }
+    },
+    {
+      "filePath": "/MyFirstFioriApp/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 6710869,
+        "displayName": "New Web Application 1"
+      }
+    }
+  ]
+}
